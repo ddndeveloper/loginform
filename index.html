@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+  </head>
+  <body>
+<form class="login-form" action="index.html" method="post">
+  <h1 class="font-weight-bold">Iniciar sesión</h1>
+
+  <div class="txtb">
+    <input type="text" name="" value="">
+    <span data-placeholder="Dirección de correo"></span>
+  </div>
+
+  <div class="txtb">
+    <input type="password" name="" value="">
+    <span data-placeholder="Contraseña"></span>
+  </div>
+
+  <button type="submit" class="loginbtn" name="button">Iniciar Sesión</button>
+
+  <div class="bottom-text">
+    ¿No tienes una cuenta?<a class="font-weight-bold" href="#"> Crea una.</a>
+  </div>
+</form>
+
+<script type="text/javascript">
+  $(".txtb input").on("focus",function(){
+    $(this).addClass("focus");
+  });
+  $(".txtb input").on("blur",function(){
+    if($(this).val()=="")
+    $(this).removeClass("focus");
+  });
+</script>
+  </body>
+</html>
